@@ -41,3 +41,6 @@ DummyTOOL*.exe
 # ROS-specific
 *.rosbag
 *.bag
+
+# VSCode workspace settings (contain absolute paths)
+.vscode/
