@@ -1,0 +1,38 @@
+{
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/pymoveit2/local/lib/python3.10/dist-packages",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/build/dummy_vision",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/dummy_vision/lib/python3.10/site-packages",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/build/dummy_controller",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/dummy_controller/lib/python3.10/site-packages",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/build/dummy-ros2_description",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/dummy-ros2_description/lib/python3.10/site-packages",
+        "/home/peter/ws_moveit2/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/moveit_py/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages",
+        "/home/peter/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/pymoveit2/local/lib/python3.10/dist-packages",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/build/dummy_vision",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/dummy_vision/lib/python3.10/site-packages",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/build/dummy_controller",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/dummy_controller/lib/python3.10/site-packages",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/build/dummy-ros2_description",
+        "/home/peter/桌面/线轨夹爪资料/其他资料/dummy_moveit_ws-main/install/dummy-ros2_description/lib/python3.10/site-packages",
+        "/home/peter/ws_moveit2/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/moveit_py/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages",
+        "/home/peter/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages",
+        "/home/peter/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/peter/C_plus_plus/robot_head/dummy_hardware"
+}

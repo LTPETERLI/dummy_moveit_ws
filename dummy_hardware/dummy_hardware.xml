@@ -1,0 +1,8 @@
+<library path="dummy_robot_system">
+  <class
+    name="dummy_hardware/DummyRobotSystem"
+    type="dummy_hardware::DummyRobotSystem"
+    base_class_type="hardware_interface::SystemInterface">
+    <description>ros2_control SystemInterface that talks to the Dummy main controller over a serial ASCII protocol.</description>
+  </class>
+</library>

@@ -1,0 +1,43 @@
+# colcon build artifacts
+build/
+install/
+log/
+
+# IDE / editor metadata
+.vscode/browse.vc.db*
+.vscode/*.log
+*.iml
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# OS / temp
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.bak/
+*.bak
+
+# Backups
+.backup_before_setup_assistant/
+.agents/
+.codex/
+
+# Upstream packages tracked separately (clone manually)
+src/realsense-ros-ros2-master/
+
+# Local archives & binaries
+*.zip
+*.tar.gz
+DummyTOOL*.exe
+
+# ROS-specific
+*.rosbag
+*.bag

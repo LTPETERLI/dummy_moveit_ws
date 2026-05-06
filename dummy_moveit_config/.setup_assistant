@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: dummy-ros2_description
+    relative_path: urdf/dummy-ros2.xacro
+  srdf:
+    relative_path: config/dummy-ros2.srdf
+  package_settings:
+    author_name: lt
+    author_email: peter@example.com
+    generated_timestamp: 1778076007

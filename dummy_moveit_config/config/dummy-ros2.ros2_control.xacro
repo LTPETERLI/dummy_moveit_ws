@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro
+        name="dummy-ros2_ros2_control"
+        params="
+            name
+            initial_positions_file
+            use_fake_hardware:=true
+            serial_port:=/dev/ttyACM0
+            baud_rate:=115200
+            read_timeout_ms:=80
+            activate_delay_ms:=200
+            command_mode:=2
+            startup_enable:=true
+            write_epsilon:=0.0005
+            joint_offset_deg:='0,0,90,0,0,0'
+            joint_sign:='1,1,1,1,-1,-1'
+            gripper_open_value:=0.012
+            gripper_closed_value:=0.0
+            gripper_threshold:=0.006">
+        <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
+        <xacro:property name="use_fake_hardware_bool" value="${str(use_fake_hardware).lower() in ['true', '1', 'yes']}"/>
+
+        <ros2_control name="${name}" type="system">
+            <hardware>
+                <xacro:if value="${use_fake_hardware_bool}">
+                    <plugin>mock_components/GenericSystem</plugin>
+                </xacro:if>
+                <xacro:unless value="${use_fake_hardware_bool}">
+                    <plugin>dummy_hardware/DummyRobotSystem</plugin>
+                    <param name="port">${serial_port}</param>
+                    <param name="baud_rate">${baud_rate}</param>
+                    <param name="read_timeout_ms">${read_timeout_ms}</param>
+                    <param name="activate_delay_ms">${activate_delay_ms}</param>
+                    <param name="command_mode">${command_mode}</param>
+                    <param name="startup_enable">${startup_enable}</param>
+                    <param name="write_epsilon">${write_epsilon}</param>
+                    <param name="joint_offset_deg">${joint_offset_deg}</param>
+                    <param name="joint_sign">${joint_sign}</param>
+                    <param name="gripper_open_value">${gripper_open_value}</param>
+                    <param name="gripper_closed_value">${gripper_closed_value}</param>
+                    <param name="gripper_threshold">${gripper_threshold}</param>
+                </xacro:unless>
+            </hardware>
+            <joint name="Joint1">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['Joint1']}</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="Joint2">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['Joint2']}</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="Joint3">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['Joint3']}</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="Joint4">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['Joint4']}</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="Joint5">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['Joint5']}</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="Joint6">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['Joint6']}</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+            <joint name="Joint7">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['Joint7']}</param>
+                </state_interface>
+                <state_interface name="velocity"/>
+            </joint>
+
+        </ros2_control>
+    </xacro:macro>
+</robot>

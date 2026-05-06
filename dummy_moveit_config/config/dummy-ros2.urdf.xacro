@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dummy-ros2">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+    <xacro:arg name="use_fake_hardware" default="true" />
+    <xacro:arg name="serial_port" default="/dev/ttyACM0" />
+    <xacro:arg name="baud_rate" default="115200" />
+    <xacro:arg name="read_timeout_ms" default="50" />
+    <xacro:arg name="activate_delay_ms" default="200" />
+    <xacro:arg name="command_mode" default="2" />
+    <xacro:arg name="startup_enable" default="true" />
+    <xacro:arg name="write_epsilon" default="0.0005" />
+
+    <!-- Import dummy-ros2 urdf file -->
+    <xacro:include filename="$(find dummy-ros2_description)/urdf/dummy-ros2.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="dummy-ros2.ros2_control.xacro" />
+
+    <xacro:dummy-ros2_ros2_control
+        name="DummySystem"
+        initial_positions_file="$(arg initial_positions_file)"
+        use_fake_hardware="$(arg use_fake_hardware)"
+        serial_port="$(arg serial_port)"
+        baud_rate="$(arg baud_rate)"
+        read_timeout_ms="$(arg read_timeout_ms)"
+        activate_delay_ms="$(arg activate_delay_ms)"
+        command_mode="$(arg command_mode)"
+        startup_enable="$(arg startup_enable)"
+        write_epsilon="$(arg write_epsilon)"/>
+
+</robot>
