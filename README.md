@@ -1,4 +1,5 @@
 # Dummy 六轴机械臂 ROS 2 控制与视觉抓取工作空间
+<img width="963" height="1494" alt="6b1c9630fee3a6e8a61224c6f77ec10c" src="https://github.com/user-attachments/assets/4b137102-b662-40bf-b1ca-d8f514a05403" />
 
 基于开源 [Dummy-Robot](https://github.com/peng-zhihui/Dummy-Robot) 六轴机械臂搭建的 **ROS 2 Humble + MoveIt 2 + ros2_control** 完整控制栈，含 URDF 建模、真机硬件接口、运动规划、夹爪控制与 D435i 视觉感知，可在 RViz 仿真与真机上完成桌面物体抓取-放置任务。
 
